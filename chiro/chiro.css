@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Racing+Sans+One&family=Tangerine:wght@700&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Nunito&family=Roboto:wght@300&family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@keyframes load {
+    0%{
+        opacity: 0.08;
+/*         font-size: 10px; */
+/* 				font-weight: 400; */
+				filter: blur(5px);
+				letter-spacing: 3px;
+        }
+    100%{
+/*         opacity: 1; */
+/*         font-size: 12px; */
+/* 				font-weight:600; */
+/* 				filter: blur(0); */
+        }
+}
+
+.animate {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	margin: auto;
+/* 	width: 350px; */
+/* 	font-size:26px; */
+	font-family: Helvetica, sans-serif, Arial;
+	animation: load 1.2s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 1px white;
+}
+#loader{
+	height: 100vh;
+    width: 100vw;
+	background-color:black;
+	color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999;
+
+}
+#chiro{
+    height: 985vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.889);
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* overflow: hidden; */
+}
+#center{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#main #img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 78%;
+    position: fixed;
+}
+ 
+#main  h1{
+    position: absolute;
+    top: 10%;
+    left: 14%;
+    /* transform: rotate(5deg); */
+    z-index: 999;
+    font-size: 8vw;
+    font-family: 'Tilt Warp', cursive;
+    letter-spacing: 8px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px rgba(255, 248, 220, 0.859);
+}
+#main #center h2{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    font-weight: 200;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    font-family: "gilroy";
+    color: rgba(255, 255, 255, 0.747);
+}
+#main #center h3{
+    position: absolute;
+    top: 25%;
+    right: 10.4%;
+    font-weight: 200;
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    font-family: "gilroy";
+    color: rgba(255, 255, 255, 0.747);
+}
+#main #note-box{
+    height: 67vh;
+    width: 40vw;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    z-index: 99999999;
+    padding: 8% 5%;
+}
+#note-box h2{
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2vw;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.895);
+}
+#note-box p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+ 
+#imgs{
+    position: relative;
+    top: 30%;
+    height: auto;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+#imgs img{
+    height: 80vh;
+    width: 60%;
+    /* position: absolute; */
+}
+ 
+#btm-page{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid white; */
+    position: relative;
+    bottom: 0%;
+    transform: rotate(-6deg);
+}
+#btm-page h1{
+    font-family: 'Tilt Warp', cursive;
+    -webkit-text-stroke: 0.1px white;
+    font-size: 5vw;
+    white-space: nowrap;
+    position: absolute;
+    /* left: 100%; */
+    top: 45%;
+
+    animation-name: anim1;
+     animation-fill-mode: forwards;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-duration: 15s;
+}
+@keyframes anim1{
+    0%{
+     left: 0%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+#circles{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 40%; 
+    display: flex;
+}
+.crcl{
+    height: 15vw;
+    width: 15vw;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.crcl h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    position: absolute;
+    z-index: 999999;
+
+    animation-name: animh2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+        animation-timing-function: linear;
+}
+.circle2{
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    cursor: pointer;
+}
+.circle3{
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    /* z-index: 99; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    cursor: pointer;
+}
+
+@keyframes animh2 {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#yep{
+    position: absolute;
+    left: -20%;
+}
+#nope{
+    position: absolute;
+    left: 20%;
+}
+#bottom{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    top: 85%;
+}
+#bottom a{
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    font-size: 8vw;
+    font-family: 'Tilt Warp', cursive;
+    letter-spacing: 10px;
+    text-decoration: none;
+    /* border-bottom: 3px solid white; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    opacity: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    /* rotate: 5deg; */
+}
+#bottom a:hover{
+    color: white;
+    -webkit-text-stroke: none;
+    border: none;
+}
+#bottom #line{
+    height: 5px;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 95%;
+    left: 25%;
+}
